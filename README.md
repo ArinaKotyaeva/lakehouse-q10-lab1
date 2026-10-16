@@ -15,7 +15,7 @@ python scripts/make_report.py
 
 ## Результаты и интерфейсы
 
-- [Отчёт по форме преподавателя](report.md) — решения, таблицы, реальные измерения и выводы.
+- [Отчёт](report.md)
 - [Топ-20 клиентов](results/gold_top20.csv).
 - [Бенчмарк](results/benchmark.csv).
 
