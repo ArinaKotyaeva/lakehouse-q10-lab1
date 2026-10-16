@@ -1,0 +1,138 @@
+{
+  "name": "lab1-q10",
+  "services": {
+    "postgres": {
+      "image": "postgres:17",
+      "environment": {
+        "POSTGRES_USER": "lake",
+        "POSTGRES_PASSWORD": "lake_local_password",
+        "POSTGRES_DB": "lakekeeper"
+      },
+      "volumes": [
+        "pgdata:/var/lib/postgresql/data"
+      ],
+      "healthcheck": {
+        "test": [
+          "CMD-SHELL",
+          "pg_isready -U lake -d lakekeeper"
+        ],
+        "interval": "3s",
+        "timeout": "3s",
+        "retries": 30
+      }
+    },
+    "minio": {
+      "image": "quay.io/minio/minio@sha256:14cea493d9a34af32f524e538b8346cf79f3321eff8e708c1e2960462bd8936e",
+      "command": [
+        "server",
+        "/data",
+        "--console-address",
+        ":9001"
+      ],
+      "environment": {
+        "MINIO_ROOT_USER": "labadmin",
+        "MINIO_ROOT_PASSWORD": "lab_local_password"
+      },
+      "ports": [
+        "127.0.0.1:19000:9000",
+        "127.0.0.1:19001:9001"
+      ],
+      "volumes": [
+        "objects:/data"
+      ]
+    },
+    "migrate": {
+      "image": "quay.io/lakekeeper/catalog@sha256:9dad9f2df9cb5cb0b6d75ec94379e0de9f5a2029e817213a68f2afd8691615dc",
+      "environment": {
+        "LAKEKEEPER__PG_ENCRYPTION_KEY": "local-lab-encryption-key-change-me",
+        "LAKEKEEPER__PG_DATABASE_URL_READ": "postgresql://lake:lake_local_password@postgres:5432/lakekeeper",
+        "LAKEKEEPER__PG_DATABASE_URL_WRITE": "postgresql://lake:lake_local_password@postgres:5432/lakekeeper",
+        "RUST_LOG": "info"
+      },
+      "command": [
+        "migrate"
+      ],
+      "depends_on": {
+        "postgres": {
+          "condition": "service_healthy"
+        }
+      }
+    },
+    "lakekeeper": {
+      "image": "quay.io/lakekeeper/catalog@sha256:9dad9f2df9cb5cb0b6d75ec94379e0de9f5a2029e817213a68f2afd8691615dc",
+      "environment": {
+        "LAKEKEEPER__PG_ENCRYPTION_KEY": "local-lab-encryption-key-change-me",
+        "LAKEKEEPER__PG_DATABASE_URL_READ": "postgresql://lake:lake_local_password@postgres:5432/lakekeeper",
+        "LAKEKEEPER__PG_DATABASE_URL_WRITE": "postgresql://lake:lake_local_password@postgres:5432/lakekeeper",
+        "RUST_LOG": "info"
+      },
+      "command": [
+        "serve"
+      ],
+      "ports": [
+        "127.0.0.1:18181:8181"
+      ],
+      "depends_on": {
+        "migrate": {
+          "condition": "service_completed_successfully"
+        }
+      },
+      "healthcheck": {
+        "test": [
+          "CMD",
+          "/home/nonroot/lakekeeper",
+          "healthcheck"
+        ],
+        "interval": "5s",
+        "timeout": "5s",
+        "retries": 30
+      }
+    },
+    "trino": {
+      "image": "trinodb/trino:484",
+      "ports": [
+        "127.0.0.1:18080:8080"
+      ],
+      "volumes": [
+        "./config/trino/catalog:/etc/trino/catalog:ro",
+        "./config/trino/config.properties:/etc/trino/config.properties:ro",
+        "./config/trino/jvm.config:/etc/trino/jvm.config:ro"
+      ],
+      "depends_on": {
+        "lakekeeper": {
+          "condition": "service_healthy"
+        }
+      },
+      "healthcheck": {
+        "test": [
+          "CMD",
+          "curl",
+          "-fsS",
+          "http://localhost:8080/v1/info"
+        ],
+        "interval": "10s",
+        "timeout": "5s",
+        "retries": 12,
+        "start_period": "45s"
+      }
+    },
+    "bi": {
+      "build": "./bi",
+      "ports": [
+        "127.0.0.1:18088:8501"
+      ],
+      "depends_on": {
+        "trino": {
+          "condition": "service_healthy"
+        }
+      },
+      "volumes": [
+        "./results:/results"
+      ]
+    }
+  },
+  "volumes": {
+    "pgdata": {},
+    "objects": {}
+  }
+}

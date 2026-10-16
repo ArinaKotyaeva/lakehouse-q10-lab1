@@ -1,0 +1,46 @@
+[
+  {
+    "schema": "bronze_gzip",
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "bytes": 48219776,
+    "write_seconds": 18.933480999992753,
+    "median_seconds": 1.5542977000004612,
+    "min_seconds": 1.3457840000046417,
+    "max_seconds": 1.5932274000006146,
+    "runs": 5
+  },
+  {
+    "schema": "bronze",
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "bytes": 48067403,
+    "write_seconds": 10.529911600002379,
+    "median_seconds": 1.190637899999274,
+    "min_seconds": 1.113489200004551,
+    "max_seconds": 1.4215608000013162,
+    "runs": 5
+  },
+  {
+    "schema": "bronze_orc",
+    "format": "ORC",
+    "codec": "ZSTD",
+    "bytes": 53098422,
+    "write_seconds": 7.690413599993917,
+    "median_seconds": 1.2862851999962004,
+    "min_seconds": 1.2492240999999922,
+    "max_seconds": 1.4996967000042787,
+    "runs": 5
+  },
+  {
+    "schema": "bronze_none",
+    "format": "PARQUET",
+    "codec": "NONE",
+    "bytes": 139275512,
+    "write_seconds": 7.764442699990468,
+    "median_seconds": 1.1776134000028833,
+    "min_seconds": 1.0704719000059413,
+    "max_seconds": 1.3004494999986491,
+    "runs": 5
+  }
+]

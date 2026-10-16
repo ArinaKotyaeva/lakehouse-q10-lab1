@@ -1,0 +1,42 @@
+[
+  {
+    "service": "bi",
+    "image_reference": "lab1-q10-bi",
+    "image_id": "sha256:acd6beb655e055db63b380f5a2dc4c3026fd43f433cfaf44f74e673f626fe26a",
+    "repo_digests": [
+      "lab1-q10-bi@sha256:acd6beb655e055db63b380f5a2dc4c3026fd43f433cfaf44f74e673f626fe26a"
+    ]
+  },
+  {
+    "service": "lakekeeper",
+    "image_reference": "quay.io/lakekeeper/catalog@sha256:9dad9f2df9cb5cb0b6d75ec94379e0de9f5a2029e817213a68f2afd8691615dc",
+    "image_id": "sha256:9dad9f2df9cb5cb0b6d75ec94379e0de9f5a2029e817213a68f2afd8691615dc",
+    "repo_digests": [
+      "quay.io/lakekeeper/catalog@sha256:9dad9f2df9cb5cb0b6d75ec94379e0de9f5a2029e817213a68f2afd8691615dc"
+    ]
+  },
+  {
+    "service": "minio",
+    "image_reference": "quay.io/minio/minio@sha256:14cea493d9a34af32f524e538b8346cf79f3321eff8e708c1e2960462bd8936e",
+    "image_id": "sha256:14cea493d9a34af32f524e538b8346cf79f3321eff8e708c1e2960462bd8936e",
+    "repo_digests": [
+      "quay.io/minio/minio@sha256:14cea493d9a34af32f524e538b8346cf79f3321eff8e708c1e2960462bd8936e"
+    ]
+  },
+  {
+    "service": "postgres",
+    "image_reference": "postgres:17",
+    "image_id": "sha256:7b405451d054ec04a90f1ce4d5a188b184e265e3facf671d96fe2a540e6c4532",
+    "repo_digests": [
+      "postgres@sha256:7b405451d054ec04a90f1ce4d5a188b184e265e3facf671d96fe2a540e6c4532"
+    ]
+  },
+  {
+    "service": "trino",
+    "image_reference": "trinodb/trino:484",
+    "image_id": "sha256:2704eb53935af5e582d63d6033e9bf99d20c325e9b0e30b1016ef59a4773979f",
+    "repo_digests": [
+      "trinodb/trino@sha256:2704eb53935af5e582d63d6033e9bf99d20c325e9b0e30b1016ef59a4773979f"
+    ]
+  }
+]

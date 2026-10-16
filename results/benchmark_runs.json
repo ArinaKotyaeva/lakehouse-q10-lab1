@@ -1,0 +1,202 @@
+[
+  {
+    "schema": "bronze_gzip",
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "round": 1,
+    "seconds": 1.5542977000004612,
+    "query_id": "20261016_183048_00118_n29y2",
+    "server_elapsed_ms": 1504,
+    "processed_bytes": 58275128
+  },
+  {
+    "schema": "bronze_none",
+    "format": "PARQUET",
+    "codec": "NONE",
+    "round": 1,
+    "seconds": 1.2639643000002252,
+    "query_id": "20261016_183049_00119_n29y2",
+    "server_elapsed_ms": 1242,
+    "processed_bytes": 147790123
+  },
+  {
+    "schema": "bronze_orc",
+    "format": "ORC",
+    "codec": "ZSTD",
+    "round": 1,
+    "seconds": 1.3699806000004173,
+    "query_id": "20261016_183051_00120_n29y2",
+    "server_elapsed_ms": 1309,
+    "processed_bytes": 63713033
+  },
+  {
+    "schema": "bronze",
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "round": 1,
+    "seconds": 1.190637899999274,
+    "query_id": "20261016_183052_00121_n29y2",
+    "server_elapsed_ms": 1151,
+    "processed_bytes": 58060647
+  },
+  {
+    "schema": "bronze_none",
+    "format": "PARQUET",
+    "codec": "NONE",
+    "round": 2,
+    "seconds": 1.1776134000028833,
+    "query_id": "20261016_183053_00122_n29y2",
+    "server_elapsed_ms": 1129,
+    "processed_bytes": 147790123
+  },
+  {
+    "schema": "bronze_gzip",
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "round": 2,
+    "seconds": 1.3457840000046417,
+    "query_id": "20261016_183054_00123_n29y2",
+    "server_elapsed_ms": 1303,
+    "processed_bytes": 58275128
+  },
+  {
+    "schema": "bronze",
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "round": 2,
+    "seconds": 1.352968700004567,
+    "query_id": "20261016_183056_00124_n29y2",
+    "server_elapsed_ms": 1287,
+    "processed_bytes": 58060647
+  },
+  {
+    "schema": "bronze_orc",
+    "format": "ORC",
+    "codec": "ZSTD",
+    "round": 2,
+    "seconds": 1.2492240999999922,
+    "query_id": "20261016_183057_00125_n29y2",
+    "server_elapsed_ms": 1146,
+    "processed_bytes": 63713033
+  },
+  {
+    "schema": "bronze",
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "round": 3,
+    "seconds": 1.1209542999931728,
+    "query_id": "20261016_183058_00126_n29y2",
+    "server_elapsed_ms": 1088,
+    "processed_bytes": 58060647
+  },
+  {
+    "schema": "bronze_none",
+    "format": "PARQUET",
+    "codec": "NONE",
+    "round": 3,
+    "seconds": 1.078988199995365,
+    "query_id": "20261016_183100_00127_n29y2",
+    "server_elapsed_ms": 1061,
+    "processed_bytes": 147790123
+  },
+  {
+    "schema": "bronze_orc",
+    "format": "ORC",
+    "codec": "ZSTD",
+    "round": 3,
+    "seconds": 1.2617576000047848,
+    "query_id": "20261016_183101_00128_n29y2",
+    "server_elapsed_ms": 1172,
+    "processed_bytes": 63713033
+  },
+  {
+    "schema": "bronze_gzip",
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "round": 3,
+    "seconds": 1.5543235000004643,
+    "query_id": "20261016_183102_00129_n29y2",
+    "server_elapsed_ms": 1489,
+    "processed_bytes": 58275128
+  },
+  {
+    "schema": "bronze",
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "round": 4,
+    "seconds": 1.4215608000013162,
+    "query_id": "20261016_183103_00130_n29y2",
+    "server_elapsed_ms": 1314,
+    "processed_bytes": 58060647
+  },
+  {
+    "schema": "bronze_none",
+    "format": "PARQUET",
+    "codec": "NONE",
+    "round": 4,
+    "seconds": 1.3004494999986491,
+    "query_id": "20261016_183105_00131_n29y2",
+    "server_elapsed_ms": 1136,
+    "processed_bytes": 147790123
+  },
+  {
+    "schema": "bronze_gzip",
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "round": 4,
+    "seconds": 1.5932274000006146,
+    "query_id": "20261016_183106_00132_n29y2",
+    "server_elapsed_ms": 1407,
+    "processed_bytes": 58275128
+  },
+  {
+    "schema": "bronze_orc",
+    "format": "ORC",
+    "codec": "ZSTD",
+    "round": 4,
+    "seconds": 1.2862851999962004,
+    "query_id": "20261016_183107_00133_n29y2",
+    "server_elapsed_ms": 1157,
+    "processed_bytes": 63713033
+  },
+  {
+    "schema": "bronze",
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "round": 5,
+    "seconds": 1.113489200004551,
+    "query_id": "20261016_183109_00134_n29y2",
+    "server_elapsed_ms": 954,
+    "processed_bytes": 58060647
+  },
+  {
+    "schema": "bronze_none",
+    "format": "PARQUET",
+    "codec": "NONE",
+    "round": 5,
+    "seconds": 1.0704719000059413,
+    "query_id": "20261016_183110_00135_n29y2",
+    "server_elapsed_ms": 932,
+    "processed_bytes": 147790123
+  },
+  {
+    "schema": "bronze_orc",
+    "format": "ORC",
+    "codec": "ZSTD",
+    "round": 5,
+    "seconds": 1.4996967000042787,
+    "query_id": "20261016_183111_00136_n29y2",
+    "server_elapsed_ms": 1346,
+    "processed_bytes": 63713033
+  },
+  {
+    "schema": "bronze_gzip",
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "round": 5,
+    "seconds": 1.4023872000034316,
+    "query_id": "20261016_183112_00137_n29y2",
+    "server_elapsed_ms": 1223,
+    "processed_bytes": 58275128
+  }
+]

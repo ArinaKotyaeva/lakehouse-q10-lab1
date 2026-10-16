@@ -1,0 +1,7 @@
+{
+  "host_os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.1",
+  "docker_cpus": "12",
+  "docker_memory_bytes": "8184348672",
+  "docker_version": "29.3.1"
+}

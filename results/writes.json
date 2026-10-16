@@ -1,0 +1,114 @@
+[
+  {
+    "table": "bronze_gzip.customer",
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "seconds": 5.238146199997573,
+    "query_id": "20261016_182801_00010_n29y2"
+  },
+  {
+    "table": "bronze_gzip.orders",
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "seconds": 3.0896558000022196,
+    "query_id": "20261016_182807_00014_n29y2"
+  },
+  {
+    "table": "bronze_gzip.lineitem",
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "seconds": 10.102266599998984,
+    "query_id": "20261016_182811_00018_n29y2"
+  },
+  {
+    "table": "bronze_gzip.nation",
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "seconds": 0.5034123999939766,
+    "query_id": "20261016_182821_00022_n29y2"
+  },
+  {
+    "table": "bronze.customer",
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "seconds": 1.5987841000023764,
+    "query_id": "20261016_182827_00028_n29y2"
+  },
+  {
+    "table": "bronze.orders",
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "seconds": 1.5900295999963419,
+    "query_id": "20261016_182830_00032_n29y2"
+  },
+  {
+    "table": "bronze.lineitem",
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "seconds": 6.594794000004185,
+    "query_id": "20261016_182832_00036_n29y2"
+  },
+  {
+    "table": "bronze.nation",
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "seconds": 0.7463038999994751,
+    "query_id": "20261016_182839_00040_n29y2"
+  },
+  {
+    "table": "bronze_orc.customer",
+    "format": "ORC",
+    "codec": "ZSTD",
+    "seconds": 1.0819856000016443,
+    "query_id": "20261016_183020_00080_n29y2"
+  },
+  {
+    "table": "bronze_orc.orders",
+    "format": "ORC",
+    "codec": "ZSTD",
+    "seconds": 1.2259047999978065,
+    "query_id": "20261016_183022_00084_n29y2"
+  },
+  {
+    "table": "bronze_orc.lineitem",
+    "format": "ORC",
+    "codec": "ZSTD",
+    "seconds": 4.9791669999976875,
+    "query_id": "20261016_183024_00088_n29y2"
+  },
+  {
+    "table": "bronze_orc.nation",
+    "format": "ORC",
+    "codec": "ZSTD",
+    "seconds": 0.40335619999677874,
+    "query_id": "20261016_183029_00092_n29y2"
+  },
+  {
+    "table": "bronze_none.customer",
+    "format": "PARQUET",
+    "codec": "NONE",
+    "seconds": 1.1121423999938997,
+    "query_id": "20261016_183031_00098_n29y2"
+  },
+  {
+    "table": "bronze_none.orders",
+    "format": "PARQUET",
+    "codec": "NONE",
+    "seconds": 1.5958575999975437,
+    "query_id": "20261016_183033_00102_n29y2"
+  },
+  {
+    "table": "bronze_none.lineitem",
+    "format": "PARQUET",
+    "codec": "NONE",
+    "seconds": 4.766968500000075,
+    "query_id": "20261016_183035_00106_n29y2"
+  },
+  {
+    "table": "bronze_none.nation",
+    "format": "PARQUET",
+    "codec": "NONE",
+    "seconds": 0.2894741999989492,
+    "query_id": "20261016_183040_00110_n29y2"
+  }
+]

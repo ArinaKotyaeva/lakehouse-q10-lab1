@@ -1,0 +1,11 @@
+{
+  "customer_duplicates": 0,
+  "order_duplicates": 0,
+  "line_duplicates": 0,
+  "invalid_money": 0,
+  "orphan_orders": 0,
+  "orphan_lines": 0,
+  "orphan_nations": 0,
+  "gold_matches_tpch": true,
+  "all_bronze_variants_match_tpch": true
+}

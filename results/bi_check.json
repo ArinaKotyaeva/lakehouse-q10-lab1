@@ -1,0 +1,44 @@
+{
+  "bronze": {
+    "customer": {
+      "rows_shown": 100,
+      "columns": [
+        "custkey",
+        "name",
+        "acctbal",
+        "nationkey",
+        "address",
+        "phone",
+        "comment"
+      ]
+    },
+    "orders": {
+      "rows_shown": 100,
+      "columns": [
+        "orderkey",
+        "custkey",
+        "orderdate"
+      ]
+    },
+    "lineitem": {
+      "rows_shown": 100,
+      "columns": [
+        "orderkey",
+        "linenumber",
+        "extendedprice",
+        "discount",
+        "returnflag"
+      ]
+    },
+    "nation": {
+      "rows_shown": 25,
+      "columns": [
+        "nationkey",
+        "name"
+      ]
+    }
+  },
+  "nation_aggregate_rows": 25,
+  "gold_rows": 20,
+  "ui_errors": 0
+}

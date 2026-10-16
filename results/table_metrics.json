@@ -1,0 +1,170 @@
+[
+  {
+    "table": "bronze_gzip.customer",
+    "rows": 150000,
+    "data_files": 1,
+    "bytes": 7420844,
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "columns": "custkey, name, acctbal, nationkey, address, phone, comment"
+  },
+  {
+    "table": "bronze_gzip.orders",
+    "rows": 1500000,
+    "data_files": 1,
+    "bytes": 7639222,
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "columns": "orderkey, custkey, orderdate"
+  },
+  {
+    "table": "bronze_gzip.lineitem",
+    "rows": 6001215,
+    "data_files": 2,
+    "bytes": 33159143,
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "columns": "orderkey, linenumber, extendedprice, discount, returnflag"
+  },
+  {
+    "table": "bronze_gzip.nation",
+    "rows": 25,
+    "data_files": 1,
+    "bytes": 567,
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "columns": "nationkey, name"
+  },
+  {
+    "table": "bronze.customer",
+    "rows": 150000,
+    "data_files": 1,
+    "bytes": 7587960,
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "columns": "custkey, name, acctbal, nationkey, address, phone, comment"
+  },
+  {
+    "table": "bronze.orders",
+    "rows": 1500000,
+    "data_files": 1,
+    "bytes": 6980610,
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "columns": "orderkey, custkey, orderdate"
+  },
+  {
+    "table": "bronze.lineitem",
+    "rows": 6001215,
+    "data_files": 2,
+    "bytes": 33498227,
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "columns": "orderkey, linenumber, extendedprice, discount, returnflag"
+  },
+  {
+    "table": "bronze.nation",
+    "rows": 25,
+    "data_files": 1,
+    "bytes": 606,
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "columns": "nationkey, name"
+  },
+  {
+    "table": "bronze_orc.customer",
+    "rows": 150000,
+    "data_files": 1,
+    "bytes": 7431992,
+    "format": "ORC",
+    "codec": "ZSTD",
+    "columns": "custkey, name, acctbal, nationkey, address, phone, comment"
+  },
+  {
+    "table": "bronze_orc.orders",
+    "rows": 1500000,
+    "data_files": 1,
+    "bytes": 6305782,
+    "format": "ORC",
+    "codec": "ZSTD",
+    "columns": "orderkey, custkey, orderdate"
+  },
+  {
+    "table": "bronze_orc.lineitem",
+    "rows": 6001215,
+    "data_files": 2,
+    "bytes": 39360043,
+    "format": "ORC",
+    "codec": "ZSTD",
+    "columns": "orderkey, linenumber, extendedprice, discount, returnflag"
+  },
+  {
+    "table": "bronze_orc.nation",
+    "rows": 25,
+    "data_files": 1,
+    "bytes": 605,
+    "format": "ORC",
+    "codec": "ZSTD",
+    "columns": "nationkey, name"
+  },
+  {
+    "table": "bronze_none.customer",
+    "rows": 150000,
+    "data_files": 1,
+    "bytes": 22366911,
+    "format": "PARQUET",
+    "codec": "NONE",
+    "columns": "custkey, name, acctbal, nationkey, address, phone, comment"
+  },
+  {
+    "table": "bronze_none.orders",
+    "rows": 1500000,
+    "data_files": 1,
+    "bytes": 18247876,
+    "format": "PARQUET",
+    "codec": "NONE",
+    "columns": "orderkey, custkey, orderdate"
+  },
+  {
+    "table": "bronze_none.lineitem",
+    "rows": 6001215,
+    "data_files": 2,
+    "bytes": 98659993,
+    "format": "PARQUET",
+    "codec": "NONE",
+    "columns": "orderkey, linenumber, extendedprice, discount, returnflag"
+  },
+  {
+    "table": "bronze_none.nation",
+    "rows": 25,
+    "data_files": 1,
+    "bytes": 732,
+    "format": "PARQUET",
+    "codec": "NONE",
+    "columns": "nationkey, name"
+  },
+  {
+    "table": "silver.customer_dim",
+    "rows": 150000,
+    "data_files": 1,
+    "bytes": 13220831,
+    "format": "PARQUET",
+    "codec": "ZSTD"
+  },
+  {
+    "table": "silver.returned_lines",
+    "rows": 114705,
+    "data_files": 1,
+    "bytes": 1779834,
+    "format": "PARQUET",
+    "codec": "ZSTD"
+  },
+  {
+    "table": "gold.returned_customers_top20",
+    "rows": 20,
+    "data_files": 1,
+    "bytes": 3226,
+    "format": "PARQUET",
+    "codec": "ZSTD"
+  }
+]
