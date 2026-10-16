@@ -2,8 +2,6 @@
 
 ## Запуск
 
-Нужны Docker Desktop с Linux-контейнерами, около 8 ГБ памяти Docker, Docker Compose v2 и Python 3.13. На хосте достаточно стандартной библиотеки Python.
-
 ```powershell
 # Из корня проекта; первый запуск скачивает образы.
 docker compose up -d postgres minio lakekeeper trino
